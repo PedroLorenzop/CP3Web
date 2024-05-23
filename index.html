@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Rede Social</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mini Rede Social</h1>
+        <form id="postForm">
+            <textarea id="postText" placeholder="O que você está pensando hoje?"></textarea>
+            <select id="postCategory">
+                <option value="Todos">Todos</option>
+                <option value="Eventos">Eventos</option>
+                <option value="Dicas">Dicas</option>
+                <option value="Notícias">Notícias</option>
+            </select>
+            <input type="url" id="imageUrl1" placeholder="Insira a URL da imagem (opcional)">
+            <input type="url" id="imageUrl2" placeholder="Insira a URL da imagem (opcional)">
+            <input type="url" id="imageUrl3" placeholder="Insira a URL da imagem (opcional)">
+            <button type="submit">Postar</button>
+        </form>
+        
+        <div>
+            <label for="filterCategory">Filtrar por categoria:</label>
+            <select id="filterCategory">
+                <option value="Todos">Todos</option>
+                <option value="Eventos">Eventos</option>
+                <option value="Dicas">Dicas</option>
+                <option value="Notícias">Notícias</option>
+            </select>
+        </div>
+
+        <div id="postsContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
